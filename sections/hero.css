@@ -1,0 +1,53 @@
+.hero{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hero__heading h1{
+    color:white;
+    font-size: 87px;
+    text-transform: capitalize;
+    width:475px;
+}
+
+
+.hero__sub-text p{
+    color:white;
+    width:280px;
+    margin-top:10px;
+}
+
+
+.hero__image{
+    width:604px;
+    height:auto;
+   
+}
+
+.buy__nft {
+    width:180px;
+    height:60px;
+    border-radius:50px;
+    margin-top:20px;
+    background-color: rgba(145, 145, 220, 1);
+    border: none;
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:white;
+}
+
+.sell__nft{
+    width:180px;
+    height:60px;
+    border-radius:50px;
+    margin-top:20px;
+    background-color: transparent; 
+  border: 1px solid rgb(163, 239, 240); 
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:white;
+}
