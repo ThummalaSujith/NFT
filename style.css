@@ -1,0 +1,8 @@
+@import url("sections/nav.css");
+@import url("sections/hero.css");
+@import url("sections/featured.css");
+
+body{
+
+    background-color:rgba(1, 1, 55, 1)
+}
