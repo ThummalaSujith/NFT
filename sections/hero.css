@@ -6,10 +6,12 @@
 
 
 .hero__heading h1{
+    font-family: 'Outfit';
     color:white;
     font-size: 87px;
     text-transform: capitalize;
     width:475px;
+    line-height: 87px;
 }
 
 
@@ -17,6 +19,8 @@
     color:white;
     width:280px;
     margin-top:10px;
+    font-family: 'Roboto';
+
 }
 
 
@@ -37,6 +41,8 @@
     text-transform: uppercase;
     font-weight: 500;
     color:white;
+    font-family: 'Outfit';
+    margin-right:16px;
 }
 
 .sell__nft{
@@ -50,4 +56,57 @@
     text-transform: uppercase;
     font-weight: 500;
     color:white;
+    font-family: 'Outfit';
+}
+
+
+@media (max-width:600px){
+    .hero__heading h1{
+        font-family: 'Outfit';
+        color:white;
+        font-size: 67px;
+        text-transform: capitalize;
+        width:475px;
+        line-height: 67px;
+    }
+
+
+.hero__sub-text p{
+    color:white;
+    width:280px;
+    margin-top:14px;
+    font-family: 'Roboto';
+    font-size: 20px;
+
+}
+
+.hero__right img{
+    width:500px;
+    height:auto;
+    object-fit: contain;
+}
+
+.hero{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:40px;
+   
+
+
+}
+   
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+
+    .hero__heading h1{
+        font-family: 'Outfit';
+        color:white;
+        font-size: 67px;
+        text-transform: capitalize;
+        width:475px;
+        line-height: 67px;
+    }
 }

@@ -1,0 +1,107 @@
+.analytics{
+    display:flex;
+    align-items: center;
+   justify-content:flex-start;
+   margin-top: 40px;
+}
+
+.analytics-Image{
+    height:461px;
+    width:422px;
+}
+
+.analytics__heading h2{
+    color:white;
+    font-weight: 700;
+    font-size:57px;
+    width:500px;
+    font-family: 'Outfit';
+    line-height: 57px;
+}
+
+.analytics__para p{
+    color:white;
+    width:360px;
+    font-family: 'Roboto';
+    line-height: 25.5px;
+}
+
+.analytics__button button{
+    height:91px;
+    width:353px;
+    background: rgba(145, 145, 220, 1);
+    color:white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27.5px;
+text-transform: uppercase;
+border-radius:50px;
+border:none;
+font-family: 'Outfit';
+margin-top: 10px;
+}
+
+.analytics__content{
+    padding-left:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:371px;
+    width:517px;
+}
+
+
+.analytics-Two{
+    display:flex;
+    align-items: center;
+ gap:104px;
+   margin-top: 40px;
+}
+
+
+.analytics-Two_Image{
+    height:373px;
+    width:347px;
+    object-fit:contain;
+ 
+
+}
+
+.analytics-Two__Image{
+    height:373px;
+    width:347px;
+}
+
+
+.analytics-Two__button button{
+    height:91px;
+    width:353px;
+    background: rgba(145, 145, 220, 1);
+    color:white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27.5px;
+text-transform: uppercase;
+border-radius:50px;
+border:none;
+font-family: 'Outfit';
+margin-top:20px;
+}
+
+.analytics-Two__heading h2{
+    color:white;
+    font-weight: 700;
+    font-size:57px;
+    width:500px;
+    font-family: 'Outfit';
+    line-height: 57px;
+}
+
+.analytics-Two__para p{
+    color:white;
+    width:360px;
+    font-family: 'Roboto';
+    margin-top:10px;
+    line-height: 25.5px;
+}
+

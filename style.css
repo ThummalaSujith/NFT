@@ -1,8 +1,16 @@
 @import url("sections/nav.css");
 @import url("sections/hero.css");
 @import url("sections/featured.css");
-
+@import url("sections/analytics.css");
+@import url("sections/testimonial.css");
+@import url("sections/started.css");
+@import url("sections/footer.css");
 body{
 
     background-color:rgba(1, 1, 55, 1)
+}
+
+a{
+    text-decoration: none;
+    color:white;
 }

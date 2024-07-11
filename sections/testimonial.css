@@ -1,0 +1,240 @@
+.card {
+  width: 346px;
+  height: 263px;
+  background: rgba(36, 31, 89, 1);
+  border-radius: 20px;
+ position: relative;
+ color:white;
+
+
+ 
+}
+
+.cards {
+
+  position: relative;
+margin-top:190px;
+display:flex;
+justify-content: center;
+gap:20px;
+
+}
+
+.circle {
+  width: 152px;
+  height: 159px;
+  background: rgb(244, 154, 244);
+  border-radius: 50%;
+  position: relative;
+  left: 100px;
+  bottom: 40px;
+  background-image: url("../assests/images/person1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: luminosity;
+  background-color: rgba(128, 128, 215, 1);
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(249, 247, 247);
+  border-radius: 50px;
+  position: absolute;
+  top: 2%;
+  left: 70%;
+  mix-blend-mode: normal;
+}
+
+.testimonials {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100vw;
+}
+
+.testimonial__heading {
+  font-weight: 700;
+  color: rgba(134, 207, 207, 1);
+  font-family: "Outfit";
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.testimonial__Sub-heading {
+  color: white;
+  width: 520px;
+  height: 114px;
+  font-size: 40px;
+  font-family: "Outfit";
+margin:0 auto;
+
+}
+
+
+.testimonial__Sub-heading span{
+  display: flex;
+  justify-content: center;
+}
+
+
+.card {
+    width: 346px;
+    height: 263px;
+    background: rgba(36, 31, 89, 1);
+    border-radius: 20px;
+   position: relative;
+
+
+
+  }
+
+  .card__heading{
+    font-family: 'Outfit';
+    display:flex;
+    justify-content: center;
+    text-transform: uppercase;
+    position:relative;
+    bottom:10%;
+  
+   
+  
+
+  }
+
+  .card__content{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+   
+  }
+
+  .card__para{
+    
+    font-family:'Roboto';
+    display:flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  @media (max-width:600px){
+    .testimonial__heading {
+      font-weight: 700;
+      color: rgba(134, 207, 207, 1);
+      font-family: "Outfit";
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      width:100vw;
+      margin:0 auto;
+    }
+    .testimonials {
+      margin-top: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width:1000px;
+    }
+
+
+    .card {
+      width: 346px;
+      height: 263px;
+      background: rgba(36, 31, 89, 1);
+      border-radius: 20px;
+     position: relative;
+     color:white;
+    
+    
+     
+    }
+
+
+    .cards {
+
+      position: relative;
+    margin-top:190px;
+    display:flex;
+    justify-content: space-evenly;
+    width:1000px;
+   margin-left:30px;
+   
+    
+    }
+
+
+  }
+
+
+  @media screen and (min-width: 601px) and (max-width: 1200px) {
+    .testimonial__heading {
+      font-weight: 700;
+      color: rgba(134, 207, 207, 1);
+      font-family: "Outfit";
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      width:100vw;
+  
+    }
+
+    .testimonials {
+      margin-top: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     
+ width:1200px;
+      
+    }
+
+    .card {
+      width: 346px;
+      height: 263px;
+      background: rgba(36, 31, 89, 1);
+      border-radius: 20px;
+     position: relative;
+     color:white;
+     
+    
+    
+     
+    }
+
+    .cards {
+
+      position: relative;
+    margin-top:190px;
+    display:flex;
+    
+    width:1200px;
+    
+    gap:12px;
+    
+
+
+   
+    
+    }
+
+    .testimonial__Sub-heading{
+      color: white;
+     width:100vw;
+      height: 114px;
+      font-size: 40px;
+      font-family: "Outfit";
+      display:flex;
+      height:200px;
+      justify-content: center;
+ 
+      
+
+    }
+    
+  }  

@@ -7,20 +7,31 @@
 .Container{
  width:80%;
     margin:0 auto;
+    margin-top:30px;
 }
 
-
-
+.nav__right-heading-mobile{
+    display:none;
+   
+    
+}
 
 .header__nav{
     display:flex;
-    justify-content:space-between;
-    color:white;
+    justify-content: space-between;
 }
+
+.nav__left-heading{
+    color:white;
+    font-family: 'Outfit';
+}
+
 
 .nav__right-heading{
     display:flex;
     gap:64px;
+    font-family: 'Outfit';
+
 }
 
 ul{
@@ -31,3 +42,68 @@ li{
     text-decoration: none;
     color:white;
 };
+
+ a {
+    text-decoration: none;
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:250px;
+    z-index:999;
+    background-color: rgba(128, 128, 215, 0.227);
+    backdrop-filter: blur(20px);
+    display:none;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.sidebar__menu svg{
+    color:white;
+}
+.sidebar li{
+    width:100%;
+    padding:40px;
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media (max-width:600px){
+
+    .header__nav{
+        width:1000px
+    }
+
+    .hideOnMobile{
+        display:none;
+    }
+
+    .sidebar__menu{
+        display:flex;
+    
+    }
+
+    .sidebar{
+        height:100%;
+    }
+    .sidebar li{
+        font-size: 25px;
+    }
+
+   
+ 
+
+}
+
+@media (min-width:601px){
+    .sidebar__menu{
+        display:none;
+    }
+}
+

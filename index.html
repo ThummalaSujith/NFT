@@ -3,12 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="Container">
@@ -18,26 +30,61 @@
         </div>
 
         <ul class="nav__right-heading">
-          <li>
+          <li class="hideOnMobile">
             <a href="#About">About</a>
-          </li>
+          </li >
 
-          <li>
+          <li class="hideOnMobile">
             <a href="#Pricing">Pricing</a>
-          </li>
-          <li>
+          </li >
+          <li class="hideOnMobile">
             <a href="#Contact">Contact</a>
           </li>
-          <li>
+          <li class="hideOnMobile">
             <a href="#Buy">Buy NFTs</a>
           </li>
+          <li class="sidebar__menu" onclick=showSidebar()>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a>
+        </li>
         </ul>
+
+
+        <ul class="sidebar">
+
+
+            <li class="sidebar-close" onclick=closeSidebar()>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            </li>
+            <li>
+              <a href="#About">About</a>
+            </li>
+  
+            <li>
+              <a href="#Pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="#Contact">Contact</a>
+            </li>
+            <li>
+              <a href="#Buy">Buy NFTs</a>
+            </li>
+
+           
+          
+          </ul>
+
+
+       
       </nav>
+
+     
+        
+    
 
       <section class="hero">
         <div class="hero__left">
           <div class="hero__heading">
-            <h1 >Discover and Collect Rare NFTs</h1>
+            <h1>Discover and Collect Rare NFTs</h1>
           </div>
 
           <div class="hero__sub-text">
@@ -54,71 +101,288 @@
           </div>
         </div>
 
-
         <div class="hero__right">
-            <img src="./assests/images/Hero.png"   class="hero__image"/>
-         </div>
+          <img src="./assests/images/Hero.png" class="hero__image" />
+        </div>
       </section>
 
       <section class="featured">
+        <p>FEATURED ON</p>
 
-       <p>FEATURED ON</p>
+        <div class="featured__on">
+          <div>
+            <img
+              src="./assests/images/TechCrunch.png"
+              alt="TechCrunch Logo"
+              class="TechCrunch__Logo"
+            />
+          </div>
 
+          <div>
+            <img src="./assests/images/Fast_company.png" class="Fast_company" />
+          </div>
 
-      <div class="featured__on">
+          <div>
+            <img src="./assests/images/mit.png" class="MIT" />
+          </div>
 
-
-
-
-
-        <div>
-            <img src="./assests/images/TechCrunch.png" alt="TechCrunch Logo" class="TechCrunch__Logo"   />
+          <div>
+            <img src="./assests/images/forbes.png" class="forbes" />
+          </div>
         </div>
-
-
-        <div>
-            <img src="./assests/images/Fast_company.png" class="Fast_company"/>
-        </div>
-
-
-        <div>
-            <img src="./assests/images/mit.png" class="MIT"/>
-        </div>
-
-        <div>
-            <img src="./assests/images/forbes.png" class="forbes"/>
-        </div>
-
- 
-
-    </div>
-
       </section>
 
-
       <section class="analytics">
-
         <div class="analytics__Image">
-
+          <img src="./assests/images/analytics.png" class="analytics-Image" />
         </div>
 
         <div class="analytics__content">
+          <div class="analytics__heading">
+            <h2>Built-In Analytics To Track Your NFTs</h2>
+          </div>
 
-            <h1>Built-In Analytics To Track Your NFTs</h1>
-
+          <div class="analytics__para">
             <p>
-                Use our built-in analytics dashboard to pull valuable insights and monitor the value of your Krypto portfolio over time.
+              Use our built-in analytics dashboard to pull valuable insights and
+              monitor the value of your Krypto portfolio over time.
             </p>
+          </div>
 
-            <button>
-                View Our Pricing
-            </button>
+          <div class="analytics__button">
+            <button>View Our Pricing</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="analytics-Two">
+        <div class="analytics-Two__content">
+          <div class="analytics-Two__heading">
+            <h2>Built-In Analytics To Track Your NFTs</h2>
+          </div>
+
+          <div class="analytics-Two__para">
+            <p>
+              Use our built-in analytics dashboard to pull valuable insights and
+              monitor the value of your Krypto portfolio over time.
+            </p>
+          </div>
+
+          <div class="analytics-Two__button">
+            <button>View Our Pricing</button>
+
+          </div>
+
+
+
+
+        </div class="analytics-Two__Image">
+        <img src="./assests/images/analytics_two.png" class="analytics-Two_Image"/>
+
+        
 
         </div>
+      </section>
 
+      <section class="testimonials">
+
+        <p class="testimonial__heading">Testimonials</p>
+
+        <div class="testimonial__Sub-heading">
+            <h1 >Read What Others <span>Have To Say</span></h1>
+        </div>
+
+        
+
+
+       
 
       </section>
 
+
+      <section class="cards">
+
+        <div class="card">
+
+            <div class="circle">
+              
+                <div class="dot">
+
+                </div>
+            </div>
+
+            
+                <h4 class="card__heading">Oliva Cole</h4>
+                <p class="card__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate adipisci eum aut ex sunt et dolor natus, beatae ullam, tempora perferendis molestiae necessitatibus!</p>
+
+          
+           
+
+           
+        </div>
+           
+
+
+            <div class="card">
+
+                <div class="circle">
+                  
+                    <div class="dot">
+    
+                    </div>
+
+
+
+                </div>
+
+
+                <h4 class="card__heading">Evan White</h4>
+
+                <p class="card__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate adipisci eum aut ex sunt et dolor natus, beatae ullam, tempora perferendis molestiae necessitatibus!</p>
+
+            </div>
+                <div class="card">
+
+                    <div class="circle">
+                      
+                        <div class="dot">
+        
+                        </div>
+
+
+
+                    </div>
+
+                    
+<h4 class="card__heading">Jessica Page</h4>
+
+<p class="card__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate adipisci eum aut ex sunt et dolor natus, beatae ullam, tempora perferendis molestiae necessitatibus!</p>
+
+
+
+
+
+   
+
+
+
     </div>
+
+   </section> 
+   
+   <section class="Started">
+
+    <p class="Started__para">Are You Ready?</p>
+
+    <div>
+        <h2 class="Started__heading">be a part of the next big thing</h2>
+    </div>
+
+    <button class="Started__button">Get Started</button>
+   </section>
+
+   <footer class="footer">
+
+    <div class="footer__heading">
+
+        <h4>Krypto</h4>
+
+    </div>
+
+    <div class="footer__col-one">
+<p>Krypto</p>
+
+    <p>
+        Home
+    </p>
+
+    <p>
+        About
+    </p>
+
+    <p>
+        Buy NFTs
+    </p>
+
+    <p>
+Sell NFTs
+    </p>
+
+
+
+    </div>
+
+    <div class="footer__col-two">
+
+        <p>Market</p>
+
+        <p>
+            Browser NFTs
+        </p>
+    
+        <p>
+            Buy NFTs
+        </p>
+    
+        <p>
+        Sell NFTs
+        </p>
+    
+        
+
+
+    </div>
+
+    <div class="footer__col-three">
+
+        <p>Contact</p>
+
+    <p>
+        Email
+    </p>
+
+    <p>
+        Linkedin
+    </p>
+
+    <p>
+      Instagram
+    </p>
+
+    <p>
+Twitter
+    </p>
+
+    </div>
+
+    <div class="footer__col-four">
+<p>Join our newsletter</p>
+
+<div class="footer__wrapper">
+    <input type="text"  placeholder="Email Address" class="footer__input"/>
+    <button class="footer__button">Submit</button>
+</div>
+
+
+
+    </div>
+
+
+
+   </footer>
+  </div>
+
+  <script>
+    function showSidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='flex'
+    }
+
+
+    function closeSidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='none'
+    }
+  </script>
   </body>
 </html>
