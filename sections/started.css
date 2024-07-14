@@ -17,6 +17,7 @@ margin:110px auto;
     font-family: 'Outfit';
    font-size:20px;
    font-weight: 500;
+   color: black;
 }
 
 .Started__heading{
@@ -29,7 +30,25 @@ margin:110px auto;
     color:white;
     width:467px;
     height:110px;
+    animation-name:zoom;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
 }
+
+@keyframes zoom {
+    from{
+        scale:0.5;
+        opacity:0.7;
+    }
+    to{
+        scale:1;
+        opacity:1;
+    }
+}
+
+
+
 
 .Started__button{
     height:91px;

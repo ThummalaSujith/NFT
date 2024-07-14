@@ -82,7 +82,7 @@
     
 
       <section class="hero">
-        <div class="hero__left">
+        <div class="hero__left from-left slide-in">
           <div class="hero__heading">
             <h1>Discover and Collect Rare NFTs</h1>
           </div>
@@ -101,12 +101,12 @@
           </div>
         </div>
 
-        <div class="hero__right">
+        <div class="hero__right from-right slide-in">
           <img src="./assests/images/Hero.png" class="hero__image" />
         </div>
       </section>
 
-      <section class="featured">
+      <section class="featured ">
         <p>FEATURED ON</p>
 
         <div class="featured__on">
@@ -132,12 +132,12 @@
         </div>
       </section>
 
-      <section class="analytics">
-        <div class="analytics__Image">
+      <section class="analytics  ">
+        <div class="analytics__Image slide-in from-left">
           <img src="./assests/images/analytics.png" class="analytics-Image" />
         </div>
 
-        <div class="analytics__content">
+        <div class="analytics__content slide-in from-right">
           <div class="analytics__heading">
             <h2>Built-In Analytics To Track Your NFTs</h2>
           </div>
@@ -155,9 +155,9 @@
         </div>
       </section>
 
-      <section class="analytics-Two">
-        <div class="analytics-Two__content">
-          <div class="analytics-Two__heading">
+      <section class="analytics-Two ">
+        <div class="analytics-Two__content slide-in from-left">
+          <div class="analytics-Two__heading ">
             <h2>Built-In Analytics To Track Your NFTs</h2>
           </div>
 
@@ -176,8 +176,8 @@
 
 
 
-        </div class="analytics-Two__Image">
-        <img src="./assests/images/analytics_two.png" class="analytics-Two_Image"/>
+        </div class="analytics-Two__Image ">
+        <img src="./assests/images/analytics_two.png"   class="analytics-Two_Image slide-in from-right"/>
 
         
 
@@ -383,6 +383,45 @@ Twitter
         const sidebar=document.querySelector('.sidebar')
         sidebar.style.display='none'
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+  const headerNav = document.querySelector('.header__nav');
+  headerNav.classList.add('animate');
+
+  const heroImages = document.querySelectorAll('.hero__image');
+  const sliders=document.querySelectorAll('.slide-in');
+
+const observer = new IntersectionObserver(entries => {
+  console.log(entries)
+  entries.forEach(entry => {
+
+    if (!entry.isIntersecting) {
+   return;
+    }else{
+      entry.target.classList.add("show")
+      observer.unobserve(entry.target);
+    }
+       
+
+    
+  });
+}, {
+  threshold: 0 
+});
+
+
+  observer.observe(heroImages[0]);
+
+sliders.forEach(slider =>{
+  observer.observe(slider);
+})
+ 
+    })
+
+
+    
+
+    
   </script>
   </body>
 </html>

@@ -30,6 +30,39 @@
    
 }
 
+
+
+
+
+  .hero__right img {
+    height:auto; /* Adjust the size of the image as needed */
+    width:604px; /* Ensure it doesn't get too large */
+    animation: appear linear;
+    animation-timeline: view();
+    animation-timing-function: ease-in-out;
+    
+    position: relative;
+ 
+  }
+
+
+  @keyframes appear{
+    from{
+        opacity: 0.3;
+        scale:0.8;
+        
+        
+       
+    }
+    to{
+        opacity:1;
+        scale:1;
+       
+        
+    }
+  }
+
+
 .buy__nft {
     width:180px;
     height:60px;
@@ -110,3 +143,27 @@
         line-height: 67px;
     }
 }
+
+
+.from-left{
+    transform:translateX(-50%)
+}
+
+
+.from-right{
+    transform:translateX(50%)
+}
+
+.from-left,
+.from-right{
+    transition:transform 400ms ease-in;
+}
+
+
+.from-left.show,
+.from-right.show{
+   transform:translateX(0)
+}
+
+
+
