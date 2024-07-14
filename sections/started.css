@@ -30,12 +30,16 @@ margin:110px auto;
     color:white;
     width:467px;
     height:110px;
+   
+    
+}
+
+.Started__heading.show{
     animation-name:zoom;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-duration: 2s;
     animation-delay: 2s;
-    
 }
 
 @keyframes zoom {

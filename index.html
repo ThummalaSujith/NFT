@@ -275,7 +275,7 @@
     <p class="Started__para">Are You Ready?</p>
 
     <div>
-        <h2 class="Started__heading">be a part of the next big thing</h2>
+        <h2 class="Started__heading zoom">be a part of the next big thing</h2>
     </div>
 
     <button class="Started__button">Get Started</button>
@@ -390,11 +390,30 @@ Twitter
 
   const heroImages = document.querySelectorAll('.hero__image');
   const sliders=document.querySelectorAll('.slide-in');
+  const zoom=document.querySelectorAll('.zoom');
 
 const observer = new IntersectionObserver(entries => {
   console.log(entries)
   entries.forEach(entry => {
+ 
+    if (!entry.isIntersecting) {
+   return;
+    }else{
+      entry.target.classList.add("show")
+      observer.unobserve(entry.target);
+    }
+       
 
+    
+  });
+}, {
+  threshold: 0 
+});
+
+const observer2 = new IntersectionObserver(entries => {
+  console.log(entries)
+  entries.forEach(entry => {
+ 
     if (!entry.isIntersecting) {
    return;
     }else{
@@ -415,6 +434,8 @@ const observer = new IntersectionObserver(entries => {
 sliders.forEach(slider =>{
   observer.observe(slider);
 })
+
+observer2.observe(zoom)
  
     })
 
